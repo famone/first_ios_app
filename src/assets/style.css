@@ -1,0 +1,22 @@
+/* Remove outline on the forms and links */ 
+:active, :hover, :focus { 
+outline: 0!important; 
+outline-offset: 0!important; 
+}
+
+button:active, button:hover, button:focus { 
+outline: 0!important; 
+outline-offset: 0!important; 
+background-color: transparent!important;
+}
+
+
+a{
+	text-decoration: none!important;
+}
+a:hover{
+	text-decoration: none!important;
+}
+a:focus{
+	text-decoration: none!important;
+}

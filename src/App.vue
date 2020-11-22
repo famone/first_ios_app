@@ -1,12 +1,20 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+      <Header />
+      <Tracker />
+
+
     </div>
-    <router-view />
-  </div>
 </template>
+    
+<script>
+import "./assets/style.css"
+import Header from './components/Header.vue'
+import Tracker from './components/Tracker.vue'
+    export default{
+      components: {Header, Tracker}
+    }
+</script>
 
 <style>
 #app {
@@ -15,18 +23,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+body{
+  margin: 0;
+  background-color: #353a5b;
 }
 </style>
